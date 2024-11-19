@@ -1,0 +1,145 @@
+/* General styles */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color:#f4f4f4;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color:white;
+    padding:10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo h1{
+    margin:0%;
+    font-size: 1.5rem;
+}
+
+header .nav-menu ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;   
+}
+
+header .nav-menu ul li{
+    margin: 0 10px;
+}
+
+header .nav-menu ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+header .hamburger-menu{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main Section */
+main{
+    padding:20px;
+}
+/* Home Section */
+
+#home h2{
+    text-align: center;
+    font-size:2rem;
+}
+#home p {
+   text-align: center; 
+   margin:10px 0 20px ;   
+}
+
+
+/* Shop Section */
+#shop{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    padding:20px 0 ;
+}
+
+.product{
+    text-align: center;
+    background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 15px;
+}
+.product img{
+    width:50%;
+    height:auto;
+    border-radius: 5px;
+}
+.product h3, .product, .product h2{
+    margin:10px 0;
+}
+
+
+.product p{
+    font-size: 1.2em;
+    color: #007bff;
+    margin:10px 0;
+}
+
+/* Footer Styles */
+footer{
+    background-color: #333;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+footer .about-us{
+    margin-bottom: 20px;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    header .hamburger-menu {
+        display: block;
+    }
+
+    #home h2 {
+        font-size: 1.5rem;
+    }
+
+    #shop {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
